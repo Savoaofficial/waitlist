@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Waiting List</title>
+
+    <!-- Schriftart und grundlegendes Styling -->
+    <style>
+        /* Grundlegende Seiteinstellungen */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        /* Container für das Formular */
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #7f8c8d;
+        }
+
+        label {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Join the Waiting List</h2>
+    <p>Please fill out the following information to join the waitlist.</p>
+
+    <!-- Hier kommt die action-URL von Formspree -->
+    <form action="https://formspree.io/f/xyzywwvo" method="POST">
+        <!-- Die Formularfelder bleiben unverändert -->
+        <label for="firstName">first Name:</label>
+        <input type="text" id="firstName" name="Vorname" required>
+
+        <label for="lastName">last Name:</label>
+        <input type="text" id="lastName" name="Nachname" required>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="E-Mail" required>
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" name="Telefonnummer" required>
+
+        <input type="submit" value="Join the Waiting List">
+    </form>
+</div>
+
+</body>
+</html>
+
